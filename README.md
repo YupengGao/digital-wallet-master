@@ -3,9 +3,11 @@
 1. I use java version "1.8.0_65"
 
 2. to complie the java code:
+
 javac ./src/antifraud.java
 
-3. run the code
+3. run the code:
+
 java -cp \src antifraud "./paymo_input/batch_payment.txt" "./paymo_input/stream_payment.txt" "./paymo_output/output1.txt" "./paymo_output/output2.txt" "./paymo_output/output3.txt"
 
 4. please be noted that: the data I download is .csv file. In my scripts, I use the .txt format.
