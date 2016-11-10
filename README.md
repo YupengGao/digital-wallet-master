@@ -34,7 +34,7 @@
 
 
 
-## some statistics 
+## Some statistics 
 1. the batch_peyment.csv is 220MB. The 1 degree adjacent file I generated is total 300MB. The 2 degree adjacent file I generated is total 700MB. 
  some thoughts: 
 	1.I think the 1 degree adjacent file and 2 degree adjacent file can be easily populated to other servers. so all the servers can have the same information for this graph. or each server can compute on small amount of data and distrubuted their result. 
