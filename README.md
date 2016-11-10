@@ -44,12 +44,12 @@ java -cp \src antifraud "./paymo_input/batch_payment.txt" "./paymo_input/stream_
 	2. another advantage to store file, when one server is down, the file can help to recover.
 
 2. the time for above solution step 1-4 is around 1 minute. 
-* Thoughts : That means that we can set 1.5 minute interval to update the adjacent list. In another way, the database which used for current query is 1 minute ago. of course, there are some ways to reduce the interval time, one is, computing less amount of data for every server. and populate the result to each other. we can use hadoop or spark when data is huge.
+*Thoughts : That means that we can set 1.5 minute interval to update the adjacent list. In another way, the database which used for current query is 1 minute ago. of course, there are some ways to reduce the interval time, one is, computing less amount of data for every server. and populate the result to each other. we can use hadoop or spark when data is huge.
 
 
 
 3. the time for computing 1 query is around 0.001s.
-* Thoughts: One improvement for my code is when query the feature1, I can actually use the hashmap in above step 2 instead of looking up the table. becaues I have already got the hashmap in my memory. but I don't have time to implement it.
+*Thoughts: One improvement for my code is when query the feature1, I can actually use the hashmap in above step 2 instead of looking up the table. becaues I have already got the hashmap in my memory. but I don't have time to implement it.
 
 
 
