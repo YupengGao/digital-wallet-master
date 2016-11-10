@@ -1,4 +1,4 @@
-## instructions on running
+## Instructions on running
 
 1. I use java version "1.8.0_65"
 
@@ -12,14 +12,16 @@
 
 
 
-## my solution for this problem
+
+
+## My solution for this problem
 
 1. clean the data
 
 2. use hashmap to represent the graph, the key is node, value is list of directly connected node
 
 3. store the directly connected node for each node in txt file. it can be used to query feature1
-for example, in 1.txt, it contains all the directly connected node for node1
+ for example, in 1.txt, it contains all the directly connected node for node1
 
 4. store the 2 degree adjacent node for each node in txt file. it can be used to query feature2
  for example, in 1.txt, it contains all the 2 degree adjacent node for node1
@@ -28,6 +30,8 @@ for example, in 1.txt, it contains all the directly connected node for node1
 5. I found storing the 4 degree list is cost too much memory and disk space. so for feature 3, I use the result from step 4.
  that is, I read the 2 degree set for node1 and set for node2, then union the two set. if union is not empty, that means
  the two node are within 4 degree
+
+
 
 
 ## some statistics 
